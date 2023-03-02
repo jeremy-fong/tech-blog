@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../models');
-const withAuth = require('../utils/auth');
+const { User, Post, Comment } = require('../models');
+
 
 router.get('/login', (req, res) => {
   // If a session exists, redirect the request to the homepage
