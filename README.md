@@ -78,9 +78,8 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 ```
 
 ## Screenshot Preview of Project :
-
-
+![tech-blog-ss](https://user-images.githubusercontent.com/112743562/223089394-91318fa2-17ec-48b6-b6f2-92356b29b559.jpg)
 
 ## Source :
 - GitHub Link: https://github.com/jeremy-fong/tech-blog
-- Heroku Link: 
+- Heroku Link: https://tech-gossip.herokuapp.com/
