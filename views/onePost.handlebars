@@ -1,6 +1,6 @@
 <div class="post">
-  <article class="card">
-    <div class="card-header flex-row justify-space-between">
+  <article id="postCard" class="card">
+    <div id="postHeader" class="card-header flex-row justify-space-between">
       <h2>{{post.title}}</h2>
       <div>
         Posted by {{post.User.username}} on {{format_date post.dateCreated}}
@@ -11,39 +11,42 @@
     </div>
   </article>
 
+{{#if post.Comments}}
+  <section class="card">
+    <div id="postHeader" class="card-header">
+      <h3>Comments</h3>
+    </div>
+
+    <div id="commentForm" class="card-body">
+      {{#each post.Comments}}
+        <div>
+          <p>
+            {{message}}
+          </p>
+          <p>
+            - {{User.username}}, {{format_date dateCreated}}
+          </p>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+{{/if}}
+
 {{#if logged_in}}
-  <form id="newComment-form" class="card">
-    <div class="card-header">
+  <form id="commentForm" class="card">
+    <div id="postHeader" class="card-header">
       <h3>Comment</h3>
     </div>
     <div class="card-body">
       <label class="form-label" for="commentMessage">Comment</label>
+      <input type="hidden" class="postId" value="{{post.id}}" />
       <textarea name="commentMessage" id="commentMessage" class="form-input"></textarea>
-      <button type="submit" class="btn">Submit</button>
+      <button id="btn" type="submit" class="btn">Submit</button>
     </div>
   </form>
 </div>
 {{/if}}
 
-  {{#if post.Comments}}
-    <section class="card">
-      <div class="card-header">
-        <h3>Comments</h3>
-      </div>
 
-      <div class="card-body">
-        {{#each post.Comments}}
-          <div>
-            <p>
-              {{message}}
-            </p>
-            <p>
-              - {{User.username}}, {{format_date dateCreated}}
-            </p>
-          </div>
-        {{/each}}
-      </div>
-    </section>
-  {{/if}}
 
 <script src="/js/comment.js"></script>

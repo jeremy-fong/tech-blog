@@ -1,14 +1,15 @@
-<div class="post card">
-  <div class="card-header">
+<div id="postCard" class="post card">
+  <div id="postHeader" class="card-header">
     <h2>Edit Post</h2>
   </div>
   <form id="editPost-form" class="card-body">
+    <input type="hidden" class="postId" value="{{post.id}}" />
     <label class="form-label" for="postTitle">Title</label>
     <input type="text" name="postTitle" id="postTitle" value="{{post.title}}" class="form-input" />
     <label class="form-label" for="postContent">Content</label>
     <textarea name="postContent" id="postContent"  class="form-input">{{post.content}}</textarea>
-    <button type="submit" class="btn">Update</button>
-    <button type="button" id="delete-btn" class="btn">Delete</button>
+    <button id="btn" type="submit" class="btn">Update</button>
+    <button id="deleteBtn" type="button" id="delete-btn" class="btn">Delete</button>
   </form>
 </div>
 

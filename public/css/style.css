@@ -1,0 +1,146 @@
+body {
+    background-color: #443A84;
+    color: #FFF;
+}
+
+.headerTitle {
+    text-align: center;
+    text-shadow: 2px 2px 8px #E97DB1;
+    color: #02B7DD;
+    font-family: Stencil Std, fantasy;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+nav a {
+    color:#FFF;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+nav a:hover {
+    color:#E97DB1;
+    text-decoration: none;
+  }
+
+ul.navbar {
+    list-style: none;
+    display: flex;
+  }
+
+#login {
+    background-color:#02B7DD;
+    color: #FFF;
+    
+}
+
+#logout {
+    background-color:#02B7DD;
+    color: #FFF;
+    margin-right: 15px;
+}
+
+#login:hover {
+    background-color:#E97DB1;
+    color: #FFF;
+    
+}
+
+#logout:hover {
+    background-color:#E97DB1;
+    color: #FFF;
+}
+
+#link {
+    color: #FFF;
+}
+
+#link:hover {
+    color: #E97DB1;
+    text-decoration: none;
+}
+
+#logCard {
+    background-color: black;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+}
+
+#logFormBtn {
+    background-color:#02B7DD;
+    margin-right: 10px;
+}
+
+#logFormBtn:hover {
+    background-color:#E97DB1;
+}
+
+.footer a {
+    padding: 15px;
+    margin-bottom: .5em;
+    background-color: #02B7DD;
+    color: #FFF;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 8px #E97DB1;
+  }
+
+.footer a:hover {
+    background-color: #E97DB1;
+  }
+
+#btn {
+    background-color:#02B7DD;
+    margin-right: 15px;
+    color: #FFF;
+}
+
+#btn:hover {
+    background-color:#E97DB1;
+}
+
+#deleteBtn {
+    background-color:#E97DB1;
+    margin-right: 15px;
+    color: #FFF;
+}
+
+#deleteBtn:hover {
+    background-color:#02B7DD;
+}
+
+#postCard {
+    background-color: black;
+}
+
+#postHeader {
+    background-color: #E97DB1;
+}
+
+#postDash {
+    background-color: black;
+    padding: 10px;
+    margin: 15px;
+}
+
+#postList {
+    text-decoration: none;
+    color:#FFF
+}
+
+#postList:hover {
+    color:#02B7DD
+}
+
+#editPost {
+    padding: 10px;
+}
+
+#commentForm {
+    background-color: black;
+}

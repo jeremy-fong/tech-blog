@@ -32,7 +32,7 @@ router.get('/post/:id', async (req, res) => {
     if (postData) {
       const post = postData.get({ plain: true });
 
-      res.render('singlePost', { post, logged_in: req.session.logged_in });
+      res.render('onePost', { post, logged_in: req.session.logged_in });
     } else {
       res.status(404).json({ message: "No post found with this id" });
     }
