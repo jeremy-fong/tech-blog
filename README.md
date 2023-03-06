@@ -25,7 +25,13 @@
 - The user needs to install Node, MySQL2, and npm dependencies for this project. 
 
 ## Usage :
-- 
+- To use the app, open it in the browser with the Heroku deployed link.
+- Once opened your screen should look like the screenshot provided below, and the app is ready to use.
+- The user needs to install the npm dependencies by inputting `npm install` into the directory terminal.
+- Rename the `.envEXAMPLE` file to `.env` and input your MySQL password in the quotes, if you have one.
+Log in to MySQL by inputting `mysql -u root -p` into the terminal.
+In the MySQL shell input `source db/schema.sql` to run the schema file, then `source db/seeds.sql` to populate the database.
+Run the program with `npm run start`.
 
 ## User Story :
 ```md
